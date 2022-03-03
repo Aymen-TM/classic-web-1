@@ -9,7 +9,7 @@
 
 body {
   font-family: "Work Sans", sans-serif;
-  
+
 
 }
 
@@ -203,7 +203,7 @@ body {
 }
 
 .landing_section p {
-  
+
   font-size: 19px;
   line-height: 1.9;
 
@@ -256,34 +256,38 @@ body {
 
 
 /* services section start */
-.services{
+.services {
   padding-top: 60px;
   height: auto;
 }
-.services .container{
+
+.services .container {
   display: block;
 }
-.services .services-content{
+
+.services .services-content {
   margin-top: 100px;
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
 
 }
+
 .services .srv {
   display: flex;
 
 }
 
 
-.services .srv i{
+.services .srv i {
   flex-basis: 80px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   color: #10CAB7;
 }
-.services .text{
+
+.services .text {
   margin-top: 5px;
-  
+
   flex: 1;
 }
 
@@ -299,15 +303,17 @@ body {
   margin: 16px 0;
 }
 
-.services .services-content .col .image img{
+.services .services-content .col .image img {
   width: 260px;
-  
+
 }
-.services .services-content .col .image{
+
+.services .services-content .col .image {
   display: none;
   position: relative;
 }
-.services .services-content .col .image::before{
+
+.services .services-content .col .image::before {
   content: "";
   position: absolute;
   height: calc(100% + 100px);
@@ -316,12 +322,12 @@ body {
   background-color: #2C4755;
   right: 0;
   z-index: -1;
-  
+
 }
 
 
 @media (max-width:768px) {
-  
+
   .special-heading {
     font-size: 60px;
   }
@@ -329,19 +335,116 @@ body {
   .special-heading+p {
     margin-top: -20px;
   }
-  .services-content .col .srv{
+
+  .services-content .col .srv {
     display: block;
     text-align: center;
   }
 }
+
 @media (min-width:1024px) {
-  .services .services-content .col .image{
+  .services .services-content .col .image {
     display: block;
   }
 }
 
-
-
-
-
 /* services section end */
+
+/*protofolio section start */
+.protofolio .container {
+  display: block;
+}
+
+.protofolio .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 80px;
+}
+
+.protofolio .card .card-text {
+  padding: 20px;
+}
+
+.protofolio .card .card-text h3 {
+  margin: 0;
+}
+
+.protofolio .card .card-text p {
+  margin-top: 16px;
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/*protofolio section end */
+
+/* about section start */
+.about .container {
+  display: block;
+}
+
+.about-content {
+  margin-top:  80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-content .about-img {
+  width: 250px;
+  height: 375px;
+  position: relative;
+}
+.about-content .about-img img{
+  max-width: 100%;
+
+}
+
+.about-content .about-text{
+  flex-basis: calc(100% - 500px);
+}
+
+.about .about-content .about-img::before {
+  content: "";
+  position: absolute;
+  background-color: #ebeced;
+  width: 100px;
+  height: calc(100% + 80px);
+  top: -40px;
+  left: -20px;
+  z-index: -1;
+}
+.about .about-content .about-img::after {
+  top: -40px;
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 300px;
+  border-left: 80px solid #10CAB7;
+  border-bottom: 80px solid #10CAB7;
+  z-index: -1;
+  right: -80px;
+}
+
+
+.about-text p:first-child {
+  margin: 16px 0 50px;
+  font-weight: bold;
+  line-height: 2;
+  margin-bottom: 50px;
+
+}
+
+.about-text p:last-child {
+  line-height: 2;
+  color: #777;
+  margin: 16px 0;
+}
+
+.about-text hr {
+  width: 50%;
+  border-color: #10CAB7;
+}
+
+/* about section end */
